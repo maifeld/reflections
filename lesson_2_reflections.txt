@@ -2,24 +2,42 @@ What happens when you initialize a repository? Why do you need to do it?
 
 	git creates a hidden directory with configuration and metadata files
 	This gets git started/established to be ready for commits
-	
+
 
 How is the staging area different from the working directory and the repository?
 	It's like an invisible package of files in the working directory, logically separated for update.  It's not real like the working directory and not permanent like the repository.
-	
+
 
 What value do you think it offers?
+
+	It's like a temporary package you can examine as a unit prior to applying to the rest of the code base - verification
+
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	Using the diff --staged, I can compare with HEAD to see that the changes are contained to one logical concept.  If not, I can add/rm until the staging area is conceptually cohesive.
+
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	When I want to make big changes to the code base, but keep a working version separately.
+
+
 How do the diagrams help you visualize the branch structure?
+
+	commit IDs only have numbers and don't mean much to a human.  The branch diagram shows a human-understandable representation of the arrangement of commits and their relationship to each other.
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	Changes from both branches are intelligently combined into one code base to be the new master.  Both branches still have existing changes, but while diverged individual branches did not have each others modifications.
+
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	automerging takes care of most of the tedium, but can't always resolve conflicts.
+
