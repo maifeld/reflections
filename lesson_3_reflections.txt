@@ -6,7 +6,7 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    If I'm working on a concept on top of a code foundation, I don't want the foundation moving underneath my work, such as an API changing.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
