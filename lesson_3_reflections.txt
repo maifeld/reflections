@@ -11,19 +11,22 @@ automatically stay up-to-date with your remote repository?
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    A fork is like a major branch, but from another user.
+	A clone is a duplicate of a project I'm working on myself.
+	A branch is a divergence from another lineage to work on a feature before merging back to the main codebase.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    If you are offline, you can see what you've changed since pulling with a git diff.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+	I would have to email text files around or share a drive somewhere.  We'd have to manually keep track of who changed what and when, then spend a lot of time reconciling differences.  Nothing would be easier.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+	Branches are a good place for risky or experimental expansions of code.  Keeping these on a branch makes the master always safe and stable.
+	
